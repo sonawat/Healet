@@ -1,0 +1,75 @@
+.latest-container {
+    padding: 90px;
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .latest-posts {
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-between; /* Space between posts */
+    margin-top: 20px; /* Space above posts */
+    gap: 20px; /* Consistent spacing between posts */
+  }
+  
+  .post {
+    background-color: #fff; /* White background for posts */
+    padding: 15px; /* Padding inside posts */
+    border: 1px solid #ccc; /* Border around posts */
+    border-radius: 5px; /* Rounded corners for posts */
+    width: 48%; /* Width of each post */
+    box-sizing: border-box; /* Include padding and border in width */
+  }
+  
+  .post-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+  }
+  
+  .post-content {
+    padding: 20px;
+    background-color: #ddd;
+  }
+  
+  .read-more-btn {
+    width: 25%;
+    padding: 10px;
+    /* background-color: #007bff; 
+    color: #fff;
+    border: none; */
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .read-more-btn:hover {
+    background-color: black; /* Darker blue on hover */
+    color: aliceblue;
+
+  }
+  
+  @media (max-width: 768px) {
+    .post {
+      width: 100%; /* Full width for posts on small screens */
+    }
+    
+    .read-more-btn {
+      width: 50%; /* Larger button on small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .post-content {
+      padding: 15px;
+    }
+    
+    .read-more-btn {
+      width: 70%; /* Full button width on very small screens */
+    }
+
+    .latest-container {
+        padding: 20px;
+    }
+  }
+  

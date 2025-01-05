@@ -1,0 +1,79 @@
+.offer-main {
+    display: grid;
+    grid-template-areas: 
+      "offer1 offer2"
+      "offer1 offer3";
+    gap: 10px;
+    margin: 10px;
+  }
+  
+  .offer1 {
+    grid-area: offer1;
+    width: 100%; /* Let the grid control layout */
+    height: 470px;
+    background-image: url('../images/o1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .offer2 {
+    grid-area: offer2;
+    width: 100%; /* Let the grid control layout */
+    height: 230px;
+    background-image: url('../images/o2.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .offer3 {
+    grid-area: offer3;
+    width: 100%; /* Let the grid control layout */
+    height: 230px;
+    background-image: url('../images/o3.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .offer{
+    position: relative;
+  }
+  .offer-n{
+    padding: 20px;
+  }
+  .offer-new1{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+  .offer-new2{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+  .offer h1{
+    color: aliceblue;
+    font-size: 45px;
+  }
+  .offer-n button{
+    font-size: 16px;
+    width: 150px;
+    padding: 10px;
+    background: none;
+    border: 1px solid rgb(250, 101, 47);
+    color: rgb(250, 101, 47);
+}
+  @media (max-width: 768px) {
+    .offer-main {
+      grid-template-areas: 
+        "offer1"
+        "offer2"
+        "offer3";
+      gap: 10px;
+    }
+  
+    .offer1,
+    .offer2,
+    .offer3 {
+      width: 100%; /* Adjust to full width on smaller screens */
+    }
+  }
+  

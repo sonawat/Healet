@@ -1,0 +1,86 @@
+#footer{
+    /* width: 100%; */
+    border: 2px solid black;
+    padding: 40px;
+    padding-left: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: black;
+}
+.footer1{
+    flex:300px;
+    }
+.footer1 input{
+    width: 80%;
+    font-size: 22px;
+    padding: 10px;
+}
+.footer1 button{
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(244, 110, 61);
+    border: 1px solid black;
+    color: aliceblue;
+}
+.footer2{
+    width: 30%;
+}
+.footer2 button{
+    font-size: 22px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 2%;
+    background: none;
+    border: 1px solid aliceblue;
+    color: aliceblue;
+}
+.footmain{
+    /* padding-left: 40px;
+    padding-right: 40px; */
+    display: flex;
+    flex-wrap: wrap;
+    color: aliceblue;
+}
+.foot{
+    flex:300px;
+    height: 200px;
+    background-color: black;
+}
+.foot1{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.foot2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.foot2,.foot3,.foot4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media (max-width:886px)
+{
+    .footer1,.footer2{
+        width: 100%;
+        text-align: center;
+    }
+    #footer{
+        padding: 10px;
+    }
+    .footmain{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
